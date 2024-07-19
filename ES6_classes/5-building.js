@@ -1,7 +1,7 @@
 export default class Building {
   constructor(sqft) {
-    if (new.target === Building) {
-      throw new TypeError('Cannot construct Building instances directly');
+    if (this.constructor !== Building && !this.evacuationWarningMessage) {
+      throw new Error('Class extending Building must override evacuationWarningMessage');
     }
     this._sqft = sqft;
   }
@@ -16,10 +16,4 @@ export default class Building {
     }
     this._sqft = newSqft;
   }
-
-  /* eslint-disable class-methods-use-this */
-  evecuationWarningMessage() {
-    throw new Error('Class extending Building must override evecuationWarningMessage');
-  }
 }
-/* eslint-enable class-methods-use-this */
