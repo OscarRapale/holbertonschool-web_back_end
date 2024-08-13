@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 
+'''function that returns a function that multiplies a float'''
+
+
 from typing import Callable
 
 

@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 
+'''a function that returns a sum of listed floats'''
+
+
 from typing import List
 
 

@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 
+'''This function returns values form a list'''
+
+
 import typing
 
 

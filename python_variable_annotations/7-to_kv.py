@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
 
+
+'''this function takes a string and an int or float and returns a tuple'''
+
+
 from typing import Union, Tuple
 
 

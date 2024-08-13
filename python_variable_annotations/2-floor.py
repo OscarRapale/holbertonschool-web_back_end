@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 
+'''This function returns a float as an integer'''
+
+
 def floor(n: float) -> int:
     """
     Floor a number.

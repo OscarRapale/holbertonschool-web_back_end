@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 
+'''Takes a list of integers and floats and returns their sum as float'''
+
+
 from typing import Union, List
 
 
