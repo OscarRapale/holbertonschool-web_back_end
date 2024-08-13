@@ -12,7 +12,6 @@ async def wait_n(n: int, max_delay: int) -> typing.List[float]:
     '''This function returns all delays'''
     delays = [await wait_random(max_delay) for _ in range(n)]
 
-
     for i in range(len(delays)):
         for j in range(0, len(delays) - i - 1):
             if delays[j] > delays[j + 1]:
