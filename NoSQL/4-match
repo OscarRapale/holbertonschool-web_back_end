@@ -1,7 +1,2 @@
-#!/bin/bash
-
-# Database name passed as a command line argument
-database_name=$1
-
-# Connect to the MongoDB server and list documents
-echo "db.school.find({name: 'Holberton school'})" | mongo $database_name --quiet
+// lists all documents
+db.school.find({ name: "Holberton school" }).pretty()
